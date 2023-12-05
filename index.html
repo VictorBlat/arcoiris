@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arc de Sant Martí</title>
 </head>
+<script>
+    function funcion_color () {
+  parraforojo=document.getElementById("parrafos_rojo").value;
+  parrafonaranja=document.getElementById("parrafos_naranja").value;
+  parrafoamarillo=document.getElementById("parrafos_amarillo").value;
+  parrafoverde=document.getElementById("parrafos_verde").value;
+  parrafoaqua=document.getElementById("parrafos_aqua").value;
+  parrafoazul=document.getElementById("parrafos_azul").value;
+  parrafomorado=document.getElementById("parrafos_morado").value;
+  
+  parraforojo.style.color='red';
+  parrafonaranja.style.color='orange';
+  parrafoamarillo.style.color='yellow';
+  parrafoverde.style.color='green';
+  parrafoaqua.style.color='aqua';
+  parrafoazul.style.color='blue';
+  parrafomorado.style.color='purple';
+    }
+</script>
+
 <body>
-    <h3>Arc de Sant Martí</h3>
-    <p onmousemove="this.style.color='red'" onmouseout="this.style.color='black'">roig, red, rojo</p>
-    <p onmousemove="this.style.color='orange'" onmouseout="this.style.color='black'">taronja, orange, naranja</p>
-    <p onmousemove="this.style.color='yellow'" onmouseout="this.style.color='black'">groc, yellow, amarillo</p>
-    <p onmousemove="this.style.color='green'" onmouseout="this.style.color='black'">verd, green, verde</p>
-    <p onmousemove="this.style.color='aqua'" onmouseout="this.style.color='black'">blau clar, light blue, azul claro</p>
-    <p onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'">blau, blue, azul</p>
-    <p onmousemove="this.style.color='purple'" onmouseout="this.style.color='black'">morat, purple, morado</p>
+    <h3 onclick="funcion_color() >Arc de Sant Martí /h3>
+    <p id="parrafos_rojo" onmousemove="this.style.color='red'" onmouseout="this.style.color='black'">roig, red, rojo</p>
+    <p id="parrafos_naranja" onmousemove="this.style.color='orange'" onmouseout="this.style.color='black'">taronja, orange, naranja</p>
+    <p id="parrafos_amarillo" onmousemove="this.style.color='yellow'" onmouseout="this.style.color='black'">groc, yellow, amarillo</p>
+    <p id="parrafos_verde" onmousemove="this.style.color='green'" onmouseout="this.style.color='black'">verd, green, verde</p>
+    <p id="parrafos_aqua" onmousemove="this.style.color='aqua'" onmouseout="this.style.color='black'">blau clar, light blue, azul claro</p>
+    <p id="parrafos_azul" onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'">blau, blue, azul</p>
+    <p id="parrafos_morado" onmousemove="this.style.color='purple'" onmouseout="this.style.color='black'">morat, purple, morado</p>
 
 </body>
 </html>
